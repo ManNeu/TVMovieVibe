@@ -1,3 +1,26 @@
+body {
+    background-image: url(https://i.pinimg.com/474x/08/83/98/088398e4a058dac0ffedb775ea598078.jpg);
+    
+}
+
+.movieSrch,
+.headtext{
+    color: azure;
+}
+
+.movieSlide{
+    margin: auto;
+}
+
+.pictureCarosel{
+background-color: black;
+}
+
+#movieSearch{
+    width: 80%;
+}
+
+
 #form-row {
     justify-content: center;
 }
@@ -49,6 +72,10 @@
   #episodes-btn {
       float: right;
       width: 200px;
+  }
+
+  #search-results{
+      color: black;
   }
 
  
