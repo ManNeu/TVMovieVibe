@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tv Show</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href=index.html>Movies</a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0 ml-2" type="submit">TV Shows</button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="row" id="form-row">
+            <div class="col-md-auto" id="form-col">
+                <form>
+                    <div class="form-group">
+                        <h1 for="exampleInputEmail1">What TV show do you want to watch today friend?</h1>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="TV show title search"
+                                id="search-input">
+                            <div class="input-group-append" id="search-btn">
+                                <span class="input-group-text btn btn-outline-primary my-sm-0">Let's
+                                    Go!</span>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning" id="error-display" style="display: none" role="alert">
+                            Sorry, that tv show was not found.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row" id="show-data" style="display: none">
+            <div class="col-md-auto col-10">
+                <p id="show-title"></p>
+                <p id="show-genres"></p>
+                <p id="show-premiered"></p>
+                <p id="show-summary"></p>
+                <img id="show-poster" src="" placeholder="">
+                <button type="button" class="btn btn-primary btn-lg" id="episodes-btn">Episodes</button>
+            </div>
+
+            <div id="episodes">
+            </div>
+        </div>
+
+        <img src="friend.jpg" style="width:100%" id="friends-image">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./TV.js"></script>
+
+</body>
+
+</html>

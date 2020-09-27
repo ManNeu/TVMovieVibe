@@ -1,0 +1,55 @@
+#form-row {
+    justify-content: center;
+}
+
+#error-display {
+    margin-top: 10px;
+    font-weight: 800;
+    width: 80%;
+}
+
+#show-title {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#show-data {
+    padding-top: 20px;
+}
+
+#friends-image {
+    padding-top: 20px;
+}
+
+.season-heading {
+    font-weight: 800;
+}
+
+.Disabled{
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  #episodes {
+      float: left;
+      padding-top: 30px;
+      padding-left: 5%;
+      padding-bottom: 20px;
+      width: 100%;
+  }
+
+  #show-poster {
+      float: left;
+  }
+
+  #episodes-btn {
+      float: right;
+      width: 200px;
+  }
+
+ 
+ 
