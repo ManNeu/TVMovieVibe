@@ -78,5 +78,7 @@ background-color: black;
       color: black;
   }
 
- 
+ .genre-card {
+     display: none;
+ }
  

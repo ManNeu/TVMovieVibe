@@ -71,9 +71,11 @@ $(document).ready(function () {
 
     function renderResults(response) {
         // Remove the home page carousel display
-        $("#carouselExampleIndicators").css("display", "none");
+        // $("#carouselExampleIndicators").css("display", "none");
+        $(".pictureCarosel").css("display", "none");
+        // Display the movie poster cards
+        $(".genre-card").css("display", "block");
 
-        $(".movieCard").css("display", "none");
         $("#movie-title1").text(response.results[0].title);
         $("#year1").text(response.results[0].release_date);
         $("#plot1").text(response.results[0].overview);
