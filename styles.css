@@ -5,6 +5,9 @@ body {
 input{
     border-radius: 12%;
 }
+nav{
+    width: 100%;
+}
 
 .movieSrch,
 .headtext{
@@ -111,3 +114,20 @@ float: left;
      display: none;
  }
  
+@media (max-width: 425px) {
+    img{
+        width: 50%;
+    }
+    .watchTrailer{
+        width: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    img{
+        width: 25%;
+    }
+    .watchTrailer{
+        width: 25%;
+    }
+}
