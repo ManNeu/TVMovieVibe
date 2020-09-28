@@ -16,10 +16,6 @@ body {
 background-color: black;
 }
 
-#movieSearch{
-    width: 80%;
-}
-
 
 #form-row {
     justify-content: center;
@@ -78,6 +74,24 @@ background-color: black;
       color: black;
   }
 
+.movieName{
+float: left;
+}
+
+.movieGenre{
+    float: left;
+}
+ 
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  .titleMovies{
+      color: azure;
+  }
  .genre-card {
      display: none;
  }
