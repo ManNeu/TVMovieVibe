@@ -19,6 +19,12 @@ input{
 background-color: black;
 }
 
+.captext{
+    text-align: center;
+}
+
+
+
 
 #form-row {
     justify-content: center;
