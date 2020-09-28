@@ -92,3 +92,7 @@ float: left;
   .titleMovies{
       color: azure;
   }
+ .genre-card {
+     display: none;
+ }
+ 
