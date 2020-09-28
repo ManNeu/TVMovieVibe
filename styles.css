@@ -3,6 +3,9 @@ body {
     font-family: 'Miriam Libre', sans-serif;
     
 }
+input{
+    border-radius: 12%;
+}
 
 .movieSrch,
 .headtext{
