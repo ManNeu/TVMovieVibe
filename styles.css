@@ -30,6 +30,10 @@ background-color: black;
     text-align: center;
 }
 
+#tv-heading {
+    color: azure;
+}
+
 
 h3{
     box-sizing: border-box;
@@ -56,6 +60,7 @@ h3{
 
 #show-data {
     padding-top: 20px;
+    color: azure;
 }
 
 #friends-image {
