@@ -2,6 +2,9 @@ body {
     background-image: url(https://i.pinimg.com/474x/08/83/98/088398e4a058dac0ffedb775ea598078.jpg);
     
 }
+input{
+    border-radius: 12%;
+}
 
 .movieSrch,
 .headtext{
