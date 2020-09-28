@@ -112,10 +112,16 @@ float: left;
     img{
         width: 50%;
     }
+    .watchTrailer{
+        width: 50%;
+    }
 }
 
 @media (max-width: 375px) {
     img{
+        width: 25%;
+    }
+    .watchTrailer{
         width: 25%;
     }
 }
