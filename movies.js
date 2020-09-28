@@ -71,10 +71,13 @@ $(document).ready(function () {
 
     function renderResults(response) {
         // Remove the home page carousel display
-        // $("#carouselExampleIndicators").css("display", "none");
         $(".pictureCarosel").css("display", "none");
         // Display the movie poster cards
         $(".genre-card").css("display", "block");
+        // Set the third card back to original margins and width
+        $(".card-three").css("margin-left", "0");
+        $(".card-three").css("margin-right", "0");
+        $(".card-three").css("width", "18rem");
 
         $("#movie-title1").text(response.results[0].title);
         $("#year1").text(response.results[0].release_date);
@@ -102,9 +105,32 @@ $(document).ready(function () {
         $("#image5").attr("src", "http://image.tmdb.org/t/p/w185//" + response.results[4].poster_path);
     }
 
+    function renderTitleResults(response) {
+        // Remove the home page carousel display
+        $(".pictureCarosel").css("display", "none");
+        // Remove the movie cards
+        $(".genre-card").css("display", "none");
+        // Display the first movie poster card 
+        $(".card-three").css("display", "block");
+        $(".card-three").css("margin-left", "25%");
+        $(".card-three").css("margin-right", "25%");
+        $(".card-three").css("width", "50%");
+        // Add the results to the movie card display
+        $("#movie-title3").text(response.results[0].title);
+        $("#year3").text(response.results[0].release_date);
+        $("#plot3").text(response.results[0].overview);
+        $("#image3").attr("src", "http://image.tmdb.org/t/p/w185//" + response.results[0].poster_path);
+
+    }
+
     function buildQueryURL(genreSearch) {
         let queryURL = "https://api.themoviedb.org/3/discover/movie?api_key="
         return queryURL + apiKey + "&apikey=" + "&language=en-US&sort_by=popularity.desc&with_genres=" + genreID;
+    }
+
+    function buildMovieTitleQueryURL(titleSearch) {
+        let queryURL = "https://api.themoviedb.org/3/search/movie?api_key="
+        return queryURL + apiKey + "&query=" + titleSearch;
     }
 
 
@@ -120,6 +146,18 @@ $(document).ready(function () {
         });
     }
 
+    function getMovieTitleData(searchTerm) {
+        // Build the query URL for the ajax request to The Movie DB
+        let queryURL = buildMovieTitleQueryURL(searchTerm);
+
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).then(function (response) {
+            renderTitleResults(response);
+        });
+    }
+
 
     $("#movie-search-btn").on("click", function (event) {
         event.preventDefault();
@@ -127,6 +165,13 @@ $(document).ready(function () {
         let genreID = getGenre(searchInput);
         // Start the request to the api
         getMovieData(genreID);
+    })
+
+    $("#movie-title-srch").on("click", function (event) {
+        event.preventDefault();
+        let searchInput = $("#movienameSearch").val();
+        // Start the request to the api
+        getMovieTitleData(searchInput);
     })
 
 })

@@ -6,6 +6,9 @@ body {
 input{
     border-radius: 12%;
 }
+nav{
+    width: 100%;
+}
 
 .movieSrch,
 .headtext{
@@ -20,6 +23,18 @@ input{
 background-color: black;
 }
 
+.captext{
+    text-align: center;
+}
+
+
+h3{
+    box-sizing: border-box;
+    border: 2px;
+    padding: 2px;
+    color: white;
+    font-size: medium;
+}
 
 #form-row {
     justify-content: center;
@@ -100,3 +115,20 @@ float: left;
      display: none;
  }
  
+@media (max-width: 425px) {
+    img{
+        width: 50%;
+    }
+    .watchTrailer{
+        width: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    img{
+        width: 25%;
+    }
+    .watchTrailer{
+        width: 25%;
+    }
+}
