@@ -27,7 +27,13 @@ background-color: black;
 }
 
 
-
+h3{
+    box-sizing: border-box;
+    border: 2px;
+    padding: 2px;
+    color: white;
+    font-size: medium;
+}
 
 #form-row {
     justify-content: center;
