@@ -5,7 +5,7 @@ Welcome to TVMovieVibe where you can search for most popular movies. We also hav
 <p>Find the deployed project here: (https://manneu.github.io/TVMovieVibe/index.html) </p>
 
 ## Instructions
-User can search their favourite movies by title and also select on basis of genre. Favourite Tv shows can be search by title. Feedback to websites can be email to us directly.
+User can search their favourite movies by title and also select on basis of genre. Favourite Tv shows can be search by title. Feedback and changes user wants to see regarding websites can be email to us directly.
 
 ## Coming soon in future versions..
 <ul>
@@ -37,9 +37,11 @@ User can search their favourite movies by title and also select on basis of genr
 ![Screenshot of TV show search results showing](/pictures/screenshotOfSearchTvShows.png)
 
 ## Authors
-Sarah Brand
-Beverley Hatzl
-Aman Kumar
-Manish Neupane
+<ul>
+    <li> Sarah Brand </li>
+    <li> Beverley Hatzl </li
+    <li> Aman Kumar </li>
+    <li> Manish Neupane </li>
+ </ul>
 
 2020
