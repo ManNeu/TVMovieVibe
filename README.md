@@ -21,17 +21,20 @@ User can search their favourite movies by title and also select on basis of genr
 ## With Help From
 * [Postman] (http://postman.com/) 
 
+## Repository Hosting Service
+* [github] (https://github.com/)
+
 #### Initial interface
 
-![Screenshot of home page]()
+![Screenshot of home page](/pictures/screenshotOfHomePage.png)
 
 #### Movie Search Results
 
-![Screenshot of movie search results showing](/)
+![Screenshot of movie search results showing](/pictures/screenshotOfSearchMovie.png)
 
 #### TV Search Results
 
-![Screenshot of TV show search results showing](/)
+![Screenshot of TV show search results showing](/pictures/screenshotOfSearchTvShows.png)
 
 ## Authors
 Sarah Brand
