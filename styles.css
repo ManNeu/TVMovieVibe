@@ -19,10 +19,6 @@ nav{
     color: azure;
 }
 
-#contactME{
-    margin: 0 auto 0 auto;
-}
-
 .movieSlide{
     margin: auto;
 }
@@ -33,6 +29,12 @@ background-color: black;
 
 .captext{
     text-align: center;
+}
+
+.editIntro{
+    text-align: center;
+    color: azure;
+    background-color: black;
 }
 
 .titleMovies{
