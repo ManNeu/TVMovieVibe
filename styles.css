@@ -73,12 +73,24 @@ h3{
     color: azure;
 }
 
+#show-poster {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+#show-summary {
+padding-right: 20%;
+}
+
+
 #friends-image {
     padding-top: 20px;
 }
 
 .season-heading {
-    font-weight: 800;
+    color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 30px; font-weight: 800; line-height: 36px; margin: 0 0 24px; text-align: center;    
 }
 
 .Disabled{
@@ -96,6 +108,8 @@ h3{
       padding-left: 5%;
       padding-bottom: 20px;
       width: 100%;
+      font-family: 'Miriam Libre', sans-serif;
+      text-align: center;
   }
 
 
