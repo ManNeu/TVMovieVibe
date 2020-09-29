@@ -88,9 +88,6 @@ h3{
       width: 100%;
   }
 
-  #show-poster {
-      float: left;
-  }
 
   #episodes-btn {
       float: right;
@@ -108,7 +105,6 @@ float: left;
 .movieGenre{
     float: left;
 }
- 
 
 .clearfix::after {
     content: " ";
@@ -119,6 +115,7 @@ float: left;
   .titleMovies{
       color: azure;
   }
+
  .genre-card {
      display: none;
  }

@@ -70,6 +70,8 @@ $(document).ready(function () {
     }
 
     function renderResults(response) {
+        // Remove error message
+        $("#error-display").css("display", "none");
         // Remove the home page carousel display
         $(".pictureCarosel").css("display", "none");
         // Display the movie poster cards
@@ -106,21 +108,26 @@ $(document).ready(function () {
     }
 
     function renderTitleResults(response) {
-        // Remove the home page carousel display
-        $(".pictureCarosel").css("display", "none");
-        // Remove the movie cards
-        $(".genre-card").css("display", "none");
-        // Display the first movie poster card 
-        $(".card-three").css("display", "block");
-        $(".card-three").css("margin-left", "10%");
-        $(".card-three").css("margin-right", "10%");
-        $(".card-three").css("width", "100%");
-        // Add the results to the movie card display
-        $("#movie-title3").text(response.results[0].title);
-        $("#year3").text(response.results[0].release_date);
-        $("#plot3").text(response.results[0].overview);
-        $("#image3").attr("src", "http://image.tmdb.org/t/p/w185//" + response.results[0].poster_path);
-
+        // Error message if no results found
+        if (response.total_results === 0) {
+            $("#error-display").css("display", "block");
+        } else {
+            $("#error-display").css("display", "none");
+            // Remove the home page carousel display
+            $(".pictureCarosel").css("display", "none");
+            // Remove the movie cards
+            $(".genre-card").css("display", "none");
+            // Display the first movie poster card 
+            $(".card-three").css("display", "block");
+            $(".card-three").css("margin-left", "10%");
+            $(".card-three").css("margin-right", "10%");
+            $(".card-three").css("width", "100%");
+            // Add the results to the movie card display
+            $("#movie-title3").text(response.results[0].title);
+            $("#year3").text(response.results[0].release_date);
+            $("#plot3").text(response.results[0].overview);
+            $("#image3").attr("src", "http://image.tmdb.org/t/p/w185//" + response.results[0].poster_path);
+        }
     }
 
     function buildQueryURL(genreSearch) {
