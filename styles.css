@@ -43,6 +43,11 @@ h3{
     font-size: medium;
 }
 
+.formDiv {
+    display: flex;
+    justify-content: center;
+}
+
 #form-row {
     justify-content: center;
 }
@@ -120,6 +125,11 @@ float: left;
      display: none;
  }
  
+.movieHolder {
+    display: flex;
+    justify-content: center; 
+}
+
 @media (max-width: 425px) {
     img{
         width: 50%;
