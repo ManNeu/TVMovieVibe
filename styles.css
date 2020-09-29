@@ -31,6 +31,12 @@ background-color: black;
     text-align: center;
 }
 
+.editIntro{
+    text-align: center;
+    color: azure;
+    background-color: black;
+}
+
 .titleMovies{
     text-align: center;
 }
