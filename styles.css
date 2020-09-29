@@ -46,6 +46,7 @@ h3{
 .formDiv {
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 #form-row {
@@ -111,6 +112,11 @@ float: left;
     float: left;
 }
 
+#single-title-result {
+    display: none;
+    justify-content: center;
+}
+
 .clearfix::after {
     content: " ";
     display: block;
@@ -128,6 +134,12 @@ float: left;
 .movieHolder {
     display: flex;
     justify-content: center; 
+}
+
+.editorsHolder {
+    display: flex;
+    justify-content: center;
+    
 }
 
 @media (max-width: 425px) {
