@@ -38,10 +38,10 @@ User can search their favourite movies by title and also select on basis of genr
 
 ## Authors
 <ul>
-    <li> Sarah Brand </li>
-    <li> Beverley Hatzl </li>
-    <li> Aman Kumar </li>
-    <li> Manish Neupane </li>
+    <li> Sarah Brand (https://github.com/brandpower)</li>
+    <li> Beverley Hatzl (https://github.com/bevhatzl)</li>
+    <li> Aman Kumar (https://github.com/amankmr4)</li>
+    <li> Manish Neupane (https://github.com/ManNeu)</li>
  </ul>
 
 2020
