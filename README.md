@@ -39,7 +39,7 @@ User can search their favourite movies by title and also select on basis of genr
 ## Authors
 <ul>
     <li> Sarah Brand </li>
-    <li> Beverley Hatzl </li
+    <li> Beverley Hatzl </li>
     <li> Aman Kumar </li>
     <li> Manish Neupane </li>
  </ul>
