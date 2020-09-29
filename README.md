@@ -20,17 +20,20 @@ Welcome to Vibe where you can search for most popular movies. We also have a tv 
 ## With Help From
 * [Postman] (http://postman.com/) 
 
+## Repository Hosting Service
+* [github] (https://github.com/)
+
 #### Initial interface
 
-![Screenshot of home page]()
+![Screenshot of home page](/pictures/screenshotOfHomePage.png)
 
 #### Movie Search Results
 
-![Screenshot of movie search results showing](/)
+![Screenshot of movie search results showing](/pictures/screenshotOfSearchMovie.png)
 
 #### TV Search Results
 
-![Screenshot of TV show search results showing](/)
+![Screenshot of TV show search results showing](/pictures/screenshotOfSearchTvShows.png)
 
 ## Authors
 Sarah Brand
