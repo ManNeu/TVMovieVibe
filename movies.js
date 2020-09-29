@@ -70,14 +70,13 @@ $(document).ready(function () {
     }
 
     function renderResults(response) {
+        // Remove error message
+        $("#error-display").css("display", "none");
         // Remove the home page carousel display
         $(".pictureCarosel").css("display", "none");
         // Display the movie poster cards
         $(".genre-card").css("display", "block");
-        // Set the third card back to original margins and width
-        $(".card-three").css("margin-left", "0");
-        $(".card-three").css("margin-right", "0");
-        $(".card-three").css("width", "18rem");
+        $("#single-title-result").css("display", "none");
 
         $("#movie-title1").text(response.results[0].title);
         $("#year1").text(response.results[0].release_date);
@@ -106,21 +105,23 @@ $(document).ready(function () {
     }
 
     function renderTitleResults(response) {
-        // Remove the home page carousel display
-        $(".pictureCarosel").css("display", "none");
-        // Remove the movie cards
-        $(".genre-card").css("display", "none");
-        // Display the first movie poster card 
-        $(".card-three").css("display", "block");
-        $(".card-three").css("margin-left", "25%");
-        $(".card-three").css("margin-right", "25%");
-        $(".card-three").css("width", "50%");
-        // Add the results to the movie card display
-        $("#movie-title3").text(response.results[0].title);
-        $("#year3").text(response.results[0].release_date);
-        $("#plot3").text(response.results[0].overview);
-        $("#image3").attr("src", "http://image.tmdb.org/t/p/w185//" + response.results[0].poster_path);
-
+        // Error message if no results found
+        if (response.total_results === 0) {
+            $("#error-display").css("display", "block");
+        } else {
+            $("#error-display").css("display", "none");
+            // Remove the home page carousel display
+            $(".pictureCarosel").css("display", "none");
+            // Remove the movie cards
+            $(".genre-card").css("display", "none");
+            // Display the first movie poster card 
+            $("#single-title-result").css("display", "flex");
+            // Add the results to the movie card display
+            $("#movie-title-single").text(response.results[0].title);
+            $("#year-single").text(response.results[0].release_date);
+            $("#plot-single").text(response.results[0].overview);
+            $("#image-single").attr("src", "http://image.tmdb.org/t/p/w185//" + response.results[0].poster_path);
+        }
     }
 
     function buildQueryURL(genreSearch) {
@@ -167,7 +168,7 @@ $(document).ready(function () {
         getMovieData(genreID);
     })
 
-    $("#movie-title-srch").on("click", function (event) {
+    $("#title-search-btn").on("click", function (event) {
         event.preventDefault();
         let searchInput = $("#movienameSearch").val();
         // Start the request to the api
