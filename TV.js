@@ -72,7 +72,7 @@ $(document).ready(function () {
 
     function getEpisodes(showID) {
         // Build the query URL for the ajax request to tv Maze for the episodes search based on show ID
-        let queryURL = "http://api.tvmaze.com/shows/" + showID + "/episodes?apikey=" + apiKey;
+        let queryURL = "https://api.tvmaze.com/shows/" + showID + "/episodes?apikey=" + apiKey;
 
         $.ajax({
             url: queryURL,
