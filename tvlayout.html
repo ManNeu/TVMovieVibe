@@ -14,7 +14,9 @@
 <body>
 
     <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand">Navbar</a>
+        <a class="navbar-brand" href="#">
+            <img src="./pictures/tvmovie.png" width="30" height="30" alt="">
+        </a>
         <form class="form-inline">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href=index.html>Movies</a></button>
             <button class="btn btn-outline-success my-2 my-sm-0 ml-2" type="submit">TV Shows</button>
@@ -26,7 +28,8 @@
             <div class="col-md-auto" id="form-col">
                 <form>
                     <div class="form-group">
-                        <h1 for="exampleInputEmail1">What TV show do you want to watch today friend?</h1>
+                        <h1 for="exampleInputEmail1" id="tv-heading">What TV show do you want to watch today friend?
+                        </h1>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="TV show title search"
                                 id="search-input">
@@ -54,6 +57,7 @@
             </div>
 
             <div id="episodes">
+                <!-- Episodes list goes here -->
             </div>
         </div>
 
@@ -61,8 +65,11 @@
 
     </div>
 
-    <footer>
-        <a href="Contact Us/web.html">Contact Us</a>
+    <footer id="tv-footer">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <a href="Contact Us/web.html">
+                <h2>Contact Us</h2>
+            </a></button>
     </footer>
 
     <script src="https://code.jquery.com/jquery.js"></script>

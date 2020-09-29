@@ -44,7 +44,7 @@
 
                 <form action="" class="movieName">
                     <input type="text" name="movieSearch" id="movienameSearch">
-                    <button class="movienameSearch"><i class="fas fa-search"></i></button>
+                    <button class="movienameSearch" id="title-search-btn"><i class="fas fa-search"></i></button>
                 </form>
 
                 <form action="" class="mr-2 mb-5 movieGenre">
@@ -74,6 +74,9 @@
 
             </div>
 
+            <div class="alert alert-warning" id="error-display" style="display: none" role="alert">
+                Sorry, that movie was not found.
+            </div>
 
             <div class="pictureCarosel m-2">
 
@@ -120,10 +123,24 @@
 
             </div>
 
+            <div class="row" id="single-title-result">
+                <div class="movieHolder m-2 col-lg-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="movie-title-single"></h5>
+                            <p class="card-text" id="year-single"></p>
+                            <p class="card-text" id="plot-single"></p>
+                            <img src="" id="image-single">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="row" id="search-results">
 
-                <div class="movieHolder m-2 col-sm-5">
-                    <div class="card genre-card" style="width: 16rem;">
+                <div class="movieHolder m-2 col-lg-5">
+                    <div class="card genre-card">
                         <div class="card-body">
                             <h5 class="card-title" id="movie-title1"></h5>
                             <p class="card-text" id="year1"></p>
@@ -134,8 +151,8 @@
                 </div>
 
 
-                <div class="movieHolder m-2 col-sm-5">
-                    <div class="card genre-card" style="width: 16rem;">
+                <div class="movieHolder m-2 col-lg-5">
+                    <div class="card genre-card">
                         <div class="card-body">
                             <h5 class="card-title" id="movie-title2"></h5>
                             <p class="card-text" id="year2"></p>
@@ -146,8 +163,8 @@
                 </div>
 
 
-                <div class="movieHolder m-2 col-sm-5">
-                    <div class="card genre-card card-three" style="width: 16rem;">
+                <div class="movieHolder m-2 col-lg-5">
+                    <div class="card genre-card card-three">
                         <div class="card-body">
                             <h5 class="card-title" id="movie-title3"></h5>
                             <p class="card-text" id="year3"></p>
@@ -156,8 +173,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="movieHolder m-2 col-sm-5">
-                    <div class="card genre-card" style="width: 16rem;">
+                <div class="movieHolder m-2 col-lg-5">
+                    <div class="card genre-card">
                         <div class="card-body">
                             <h5 class="card-title" id="movie-title4"></h5>
                             <p class="card-text" id="year4"></p>
@@ -167,8 +184,8 @@
                     </div>
                 </div>
 
-                <div class="movieHolder m-2 col-sm-5">
-                    <div class="card genre-card" style="width: 16rem;">>
+                <div class="movieHolder m-2 col-lg-5">
+                    <div class="card genre-card">
                         <div class="card-body">
                             <h5 class="card-title" id="movie-title5"></h5>
                             <p class="card-text" id="year5"></p>
@@ -180,8 +197,8 @@
             </div>
 
             <div class="editorsHolder row">
-                <div class="Editor1 m-2 col-sm-5">
-                    <div class=" card" style="width: 16rem;">
+                <div class="Editor1 m-2 col-md-5">
+                    <div class="card">
                         <img class="card-img-top"
                             src="https://www.brandcrowd.com/gallery/brands/pictures/picture15442946478878.jpg"
                             alt="Card image cap">
@@ -195,8 +212,8 @@
                     </div>
 
                 </div>
-                <div class="Editor2 m-2 col-sm-5">
-                    <div class=" card" style="width: 16rem;">
+                <div class="Editor2 m-2 col-md-5">
+                    <div class="card">
                         <img class="card-img-top"
                             src="https://www.brandcrowd.com/gallery/brands/pictures/picture15442946478878.jpg"
                             alt="Card image cap">
@@ -210,8 +227,8 @@
                     </div>
                 </div>
 
-                <div class="Editor3 m-2 col-sm-5">
-                    <div class=" card" style="width: 16rem;">
+                <div class="Editor3 m-2 col-md-5">
+                    <div class="card">
                         <img class="card-img-top"
                             src="https://www.brandcrowd.com/gallery/brands/pictures/picture15442946478878.jpg"
                             alt="Card image cap">
@@ -225,8 +242,8 @@
                     </div>
                 </div>
 
-                <div class="Editor4 m-2 col-sm-5">
-                    <div class=" card" style="width: 16rem;">
+                <div class="Editor4 m-2 col-md-5">
+                    <div class="card">
                         <img class="card-img-top"
                             src="https://www.brandcrowd.com/gallery/brands/pictures/picture15442946478878.jpg"
                             alt="Card image cap">

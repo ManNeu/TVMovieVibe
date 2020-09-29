@@ -34,6 +34,10 @@ background-color: black;
     text-align: center;
 }
 
+#tv-heading {
+    color: azure;
+}
+
 
 h3{
     box-sizing: border-box;
@@ -41,6 +45,12 @@ h3{
     padding: 2px;
     color: white;
     font-size: medium;
+}
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 #form-row {
@@ -60,6 +70,7 @@ h3{
 
 #show-data {
     padding-top: 20px;
+    color: azure;
 }
 
 #friends-image {
@@ -87,9 +98,6 @@ h3{
       width: 100%;
   }
 
-  #show-poster {
-      float: left;
-  }
 
   #episodes-btn {
       float: right;
@@ -107,7 +115,11 @@ float: left;
 .movieGenre{
     float: left;
 }
- 
+
+#single-title-result {
+    display: none;
+    justify-content: center;
+}
 
 .clearfix::after {
     content: " ";
@@ -118,10 +130,22 @@ float: left;
   .titleMovies{
       color: azure;
   }
+
  .genre-card {
      display: none;
  }
  
+.movieHolder {
+    display: flex;
+    justify-content: center; 
+}
+
+.editorsHolder {
+    display: flex;
+    justify-content: center;
+    
+}
+
 @media (max-width: 425px) {
     img{
         width: 50%;
